@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravindra Mukati | Portfolio - Digital Marketing Manager & AI Prompt Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Ravindra (Ravi) Mukati - Digital Marketing Manager, AI Prompt Engineer, and Brand Strategist at Bapna Seeds. Specializing in high-performance digital marketing, Meta Ads, and Agritech strategy.">
+    <meta name="keywords" content="Ravindra Mukati, Digital Marketing, Performance Ads, AI Prompt Engineer, Bapna Seeds, Seed Marketing, Agritech Marketing, Meta Ads Expert, Google Ads, SEO Specialist, India">
+    <meta name="author" content="Ravindra Mukati">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ravindra Mukati | Brand Strategist & Performance Marketer">
+    <meta property="og:description" content="Helping brands grow with Creative Marketing, AI, and Agri-digital Strategy. Explore portfolio, AI prompt playgrounds, and live campaign analytics.">
+    
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#090D16',
+                            card: '#121B2E',
+                            accent: '#22C55E', // Agri Emerald Green
+                            accentBlue: '#06B6D4', // Cyan
+                            muted: '#94A3B8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #090D16;
+            color: #F8FAFC;
+            overflow-x: hidden;
+            cursor: none; /* Custom premium cursor active on desktop */
+        }
+        
+        .heading-font {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Premium Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090D16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22C55E;
+        }
+
+        /* Glassmorphism Classes */
+        .glass {
+            background: rgba(18, 27, 46, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-premium {
+            background: linear-gradient(135deg, rgba(18, 27, 46, 0.6) 0%, rgba(9, 13, 22, 0.8) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(34, 197, 94, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Custom Cursor Elements */
+        #custom-cursor {
+            width: 8px;
+            height: 8px;
+            background-color: #22C55E;
+            border-radius: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            transition: width 0.2s, height 0.2s, background-color 0.2s;
+        }
+
+        #custom-cursor-glow {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(34, 197, 94, 0.08) 0%, rgba(6, 182, 212, 0.03) 50%, rgba(0,0,0,0) 70%);
+            position: fixed;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9998;
+            border-radius: 50%;
+            mix-blend-mode: screen;
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #22C55E 0%, #06B6D4 50%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Circle Progress Indicator */
+        .circle-progress {
+            transition: stroke-dashoffset 0.8s ease-out;
+        }
+
+        /* Loader Animation Styles */
+        #loader-screen {
+            transition: opacity 0.8s ease, visibility 0.8s;
+        }
+
+        /* Avoid pointer issues on touch devices for custom cursor */
+        @media (max-width: 1024px) {
+            #custom-cursor, #custom-cursor-glow {
+                display: none !important;
+            }
+            body {
+                cursor: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="selection:bg-emerald-500 selection:text-white">
+
+    <!-- PRE-LOADER SCREEN -->
+    <div id="loader-screen" class="fixed inset-0 bg-brand-dark z-[99999] flex flex-col items-center justify-center">
+        <div class="relative flex flex-col items-center">
+            <!-- Animated Green Seed/Core Glowing Orb -->
+            <div class="absolute w-24 h-24 bg-brand-accent/20 rounded-full blur-xl animate-pulse-slow"></div>
+            <div class="w-16 h-16 border-4 border-slate-800 border-t-brand-accent rounded-full animate-spin"></div>
+            
+            <div class="mt-8 text-center">
+                <h2 class="heading-font text-xl font-bold tracking-wider text-white">RAVINDRA MUKATI</h2>
+                <p class="text-xs text-brand-accent tracking-[0.25em] uppercase mt-1">Growth • Strategy • AI</p>
+            </div>
+            
+            <div class="mt-12 w-48 bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div id="loader-progress-bar" class="bg-gradient-to-r from-brand-accent via-cyan-400 to-blue-500 h-full w-0 transition-all duration-300"></div>
+            </div>
+            <span id="loader-text" class="text-xs text-slate-500 mt-2">Loading performance metrics...</span>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-glow"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+            <div class="glass rounded-2xl px-6 py-4 flex items-center justify-between">
+                <!-- Brand Identity -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-accent to-brand-accentBlue flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-accent/20 group-hover:scale-105 transition-transform">
+                        RM
+                    </div>
+                    <div>
+                        <span class="block heading-font text-white font-bold text-sm tracking-wide group-hover:text-brand-accent transition-colors">Ravindra Mukati</span>
+                        <span class="block text-[10px] text-slate-400 tracking-wider uppercase">Agritech Growth Partner</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Items -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">About</a>
+                    <a href="#skills" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">Skills</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">Services</a>
+                    <a href="#portfolio" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">Portfolio</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">Experience</a>
+                    <a href="#ai-playground" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full"><span class="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse"></span>AI Sandbox</a>
+                    <a href="#blog" class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">Blog</a>
+                </nav>
+
+                <!-- Desktop CTA & Action Center -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="#contact" class="px-5 py-2 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accentBlue hover:shadow-lg hover:shadow-brand-accent/25 transition-all text-sm font-semibold text-brand-dark">
+                        Let's Talk Ads <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-brand-accent p-1 text-2xl transition-colors" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE DRAWER CONTAINER -->
+        <div id="mobile-drawer" class="hidden fixed inset-0 z-40 bg-brand-dark/95 backdrop-blur-lg flex flex-col justify-center px-8 transition-all duration-300">
+            <div class="absolute top-6 right-6">
+                <button id="mobile-close-btn" class="text-slate-400 hover:text-white text-3xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="space-y-6 flex flex-col text-left">
+                <a href="#about" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">01. About</a>
+                <a href="#skills" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">02. Skills</a>
+                <a href="#services" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">03. Services</a>
+                <a href="#portfolio" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">04. Portfolio</a>
+                <a href="#experience" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">05. Experience</a>
+                <a href="#ai-playground" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent flex items-center gap-2">06. AI Sandbox <span class="text-xs bg-brand-accent text-brand-dark px-2 py-0.5 rounded-full font-sans uppercase font-semibold">Live</span></a>
+                <a href="#blog" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">07. Blog</a>
+                <a href="#contact" class="mobile-nav-link text-3xl heading-font font-bold text-slate-300 hover:text-brand-accent">08. Contact</a>
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-slate-800/80 flex gap-6 text-xl text-slate-400">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://whatsapp.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-screen pt-36 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Floating Interactive Orbs in background -->
+        <div class="absolute top-[20%] left-[10%] w-72 h-72 bg-brand-accent/10 rounded-full blur-[100px] animate-pulse-slow"></div>
+        <div class="absolute bottom-[20%] right-[10%] w-96 h-96 bg-brand-accentBlue/10 rounded-full blur-[130px] animate-float"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Core Copy -->
+                <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-left">
+                    
+                    <!-- Availability Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800/80 w-fit">
+                        <span class="relative flex h-3.5 w-3.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-brand-accent"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-slate-200 tracking-wide">Available for Strategy & Marketing Consulting</span>
+                    </div>
+
+                    <!-- Headline Sequence with Typewriter Mimic -->
+                    <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight">
+                        Scaling Brands <br>
+                        With <span class="gradient-text">Agri-tech Strategy</span>, Meta Ads & AI.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-400 font-normal leading-relaxed max-w-2xl">
+                        I am <strong class="text-slate-200">Ravindra Mukati</strong>, Digital Marketing Manager at Bapna Seeds. I engineer high-performing organic & paid marketing systems, brand identity, and custom AI tools tailored for agritech & modern businesses.
+                    </p>
+
+                    <!-- Interactive CTAs -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#portfolio" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accentBlue text-brand-dark font-bold text-sm tracking-wide shadow-lg shadow-brand-accent/20 hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-crop-simple"></i> View My Growth Case Studies
+                        </a>
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-accent/40 text-slate-200 font-semibold text-sm tracking-wide hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Let's Collaborate
+                        </a>
+                    </div>
+
+                    <!-- Trusted / Company Badge -->
+                    <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                        <span class="text-xs uppercase font-semibold text-slate-500 tracking-wider">Driving growth for:</span>
+                        <div class="flex items-center gap-3">
+                            <div class="px-4 py-2 rounded-lg bg-emerald-950/30 border border-emerald-900/40 text-brand-accent font-bold text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-wheat-awn text-emerald-400 animate-bounce"></i> BAPNA SEEDS PVT. LTD.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Interactive Right Column (Premium UI Dashboard Simulation) -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Glassmorphic Visual Interactive Stack -->
+                    <div class="relative mx-auto max-w-[420px]">
+                        <!-- Behind Glow Panel -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-accent to-brand-accentBlue rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <!-- Core Portrait & Stats Card -->
+                        <div class="relative rounded-3xl glass-premium p-6 overflow-hidden flex flex-col space-y-6">
+                            
+                            <!-- Profile Headshot Frame -->
+                            <div class="flex items-center gap-4 border-b border-slate-800 pb-5">
+                                <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-accent to-brand-accentBlue p-1 shrink-0 relative overflow-hidden">
+                                    <div class="w-full h-full bg-brand-dark rounded-[14px] flex items-center justify-center font-bold text-2xl text-brand-accent">
+                                        <!-- Initials or Premium Icon -->
+                                        <i class="fa-solid fa-seedling text-brand-accent text-2xl"></i>
+                                    </div>
+                                    <div class="absolute inset-0 bg-brand-accent/10 animate-pulse"></div>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-white font-bold text-lg leading-tight">Ravindra Mukati</h3>
+                                    <p class="text-xs text-brand-accent font-medium">Digital Marketing Manager</p>
+                                    <p class="text-[10px] text-slate-400">B.Sc. Seed Technology</p>
+                                </div>
+                            </div>
+
+                            <!-- Live Marketing Dashboard Metric Simulator Inside Hero -->
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-slate-400 uppercase font-bold tracking-wider">Live Agri-Campaign ROI</span>
+                                    <span class="text-brand-accent font-bold px-2 py-0.5 rounded-full bg-emerald-950/80"><i class="fa-solid fa-caret-up"></i> 4.8x ROAS</span>
+                                </div>
+                                
+                                <!-- Animated CSS SVG Line Chart Mock -->
+                                <div class="h-32 w-full bg-slate-950/80 rounded-xl relative overflow-hidden border border-slate-900 flex items-end p-2">
+                                    <svg viewBox="0 0 100 30" class="w-full h-full text-brand-accent">
+                                        <path d="M0,25 Q15,20 30,12 T60,18 T90,3 L100,5" fill="none" stroke="currentColor" stroke-width="2" class="animate-dash" stroke-dasharray="100" stroke-dashoffset="0"></path>
+                                        <path d="M0,25 Q15,20 30,12 T60,18 T90,3 L100,5 L100,30 L0,30 Z" fill="url(#chart-grad)" opacity="0.15"></path>
+                                        <defs>
+                                            <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="#22C55E"/>
+                                                <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="absolute top-2 left-3 flex flex-col text-[10px] text-slate-500">
+                                        <span>Bapna Cotton Campaign</span>
+                                        <span class="text-white text-xs font-bold font-sans">₹1,20,000+ Reach/Day</span>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-3 text-center">
+                                    <div class="p-3 bg-slate-950/40 border border-slate-900 rounded-xl">
+                                        <span class="block text-[10px] text-slate-500 font-medium">AVG CPC</span>
+                                        <span class="block text-sm font-bold text-white">₹1.84</span>
+                                    </div>
+                                    <div class="p-3 bg-slate-950/40 border border-slate-900 rounded-xl">
+                                        <span class="block text-[10px] text-slate-500 font-medium">CONVERSION RATE</span>
+                                        <span class="block text-sm font-bold text-brand-accentBlue">8.42%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Button Sandbox Hint -->
+                            <div class="border-t border-slate-900 pt-4 flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fa-solid fa-robot mr-1 text-cyan-400"></i> Prompts Engineered</span>
+                                <span class="text-slate-300 font-semibold">1,200+ Prompts</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK STATS BAR -->
+    <section class="py-12 border-y border-slate-900 bg-slate-950/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                
+                <div class="space-y-1">
+                    <span class="block text-3xl sm:text-4xl font-black heading-font text-white" id="stat-years">0</span>
+                    <span class="block text-xs uppercase text-slate-500 tracking-widest font-semibold">Years Experience</span>
+                </div>
+                
+                <div class="space-y-1">
+                    <span class="block text-3xl sm:text-4xl font-black heading-font text-brand-accent" id="stat-campaigns">0</span>
+                    <span class="block text-xs uppercase text-slate-500 tracking-widest font-semibold">Campaigns Managed</span>
+                </div>
+                
+                <div class="space-y-1">
+                    <span class="block text-3xl sm:text-4xl font-black heading-font text-white" id="stat-roas">0</span>
+                    <span class="block text-xs uppercase text-slate-500 tracking-widest font-semibold">Avg. Ads ROAS</span>
+                </div>
+                
+                <div class="space-y-1">
+                    <span class="block text-3xl sm:text-4xl font-black heading-font text-brand-accentBlue" id="stat-leads">0</span>
+                    <span class="block text-xs uppercase text-slate-500 tracking-widest font-semibold">Digital Leads Generated</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME & BRAND STORY -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">01 . My Story</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Merging Agriculture Tech & Modern Marketing</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Brand Mission, Vision, Background Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="heading-font text-2xl font-bold text-white">Cultivating Growth through Digital Precision</h3>
+                    
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        With a solid foundation holding a <strong>B.Sc. in Seed Technology</strong>, I offer a unique perspective to digital brand strategy. I do not just run ads; I understand the product cycle, farmer psychology, supply chain realities, and deep agronomics that make agribusinesses stand out.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        At <strong class="text-slate-200">Bapna Seeds Pvt. Ltd.</strong>, I led complete brand overhauls, driving performance ads, YouTube search dominance, and community creation. My superpower is integrating AI tools to streamline content generation, high-converting copy, and automating systems that scale lead acquisition.
+                    </p>
+
+                    <!-- Mission / Vision Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-accent/20 text-brand-accent mb-4"><i class="fa-solid fa-eye text-lg"></i></span>
+                            <h4 class="heading-font text-white font-bold text-sm">Vision for Agritech</h4>
+                            <p class="text-xs text-slate-400 mt-2">Empowering local seed and agricultural manufacturers with localized digital strategies that build deep customer relationships.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-cyan-950/40 text-brand-accentBlue mb-4"><i class="fa-solid fa-bolt text-lg"></i></span>
+                            <h4 class="heading-font text-white font-bold text-sm">High-Tech Marketing</h4>
+                            <p class="text-xs text-slate-400 mt-2">Replacing guesswork with real-time conversion models, targeted local languages, Meta messaging funnels, and prompt systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Timeline Accordion Panel -->
+                <div class="lg:col-span-5 glass rounded-2xl p-6">
+                    <h3 class="heading-font text-lg font-bold text-white mb-6 border-b border-slate-800 pb-3 flex items-center justify-between">
+                        <span>Professional Timeline</span>
+                        <span class="text-xs font-sans text-brand-accent font-semibold">Chronological Highlights</span>
+                    </h3>
+
+                    <div class="space-y-4">
+                        <!-- Timeline Node 1 -->
+                        <div class="relative pl-6 border-l-2 border-brand-accent pb-4">
+                            <div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-brand-accent"></div>
+                            <span class="block text-[10px] font-bold text-slate-500 uppercase">2023 - Present</span>
+                            <span class="block text-sm font-bold text-white">Digital Marketing Manager</span>
+                            <span class="block text-xs text-brand-accent">Bapna Seeds Pvt. Ltd.</span>
+                            <p class="text-xs text-slate-400 mt-1">Driving visual branding, lead acquisition campaigns, SEO optimization, and AI deployment across channels.</p>
+                        </div>
+
+                        <!-- Timeline Node 2 -->
+                        <div class="relative pl-6 border-l-2 border-slate-800 pb-4">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                            <span class="block text-[10px] font-bold text-slate-500 uppercase">2020 - 2023</span>
+                            <span class="block text-sm font-bold text-white">Independent Freelance Growth Partner</span>
+                            <span class="block text-xs text-slate-400">Creative Strategy & Graphic Production</span>
+                            <p class="text-xs text-slate-400 mt-1">Executed branding, website setups, ad creatives, and high-performance lead campaigns for localized agritech entities.</p>
+                        </div>
+
+                        <!-- Timeline Node 3 -->
+                        <div class="relative pl-6">
+                            <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                            <span class="block text-[10px] font-bold text-slate-500 uppercase">Graduation Milestones</span>
+                            <span class="block text-sm font-bold text-white">B.Sc. in Seed Technology</span>
+                            <span class="block text-xs text-slate-400">Specialized Agricultural Foundation</span>
+                            <p class="text-xs text-slate-400 mt-1">Mastered Seed physiology, crop science, and agricultural chemistry forming the baseline of Agritech insights.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 bg-slate-950/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">02 . Core Arsenal</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Technical & Strategic Competence</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Skills Interactive Panel -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Circular Indicator skill block 1 -->
+                <div class="p-6 rounded-2xl glass flex flex-col items-center text-center group hover:border-brand-accent/30 transition-all">
+                    <div class="relative w-28 h-28 flex items-center justify-center mb-4">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="56" cy="56" r="48" stroke="#1e293b" stroke-width="6" fill="transparent"></circle>
+                            <circle cx="56" cy="56" r="48" stroke="#22C55E" stroke-width="6" fill="transparent" class="circle-progress" stroke-dasharray="301" stroke-dashoffset="15" stroke-linecap="round"></circle>
+                        </svg>
+                        <span class="absolute text-lg font-black text-white">95%</span>
+                    </div>
+                    <h3 class="heading-font text-sm font-bold text-white">Digital Marketing Strategy</h3>
+                    <p class="text-xs text-slate-400 mt-2">ROAS modeling, funnel creation, localized content adaptation.</p>
+                </div>
+
+                <!-- Circular Indicator skill block 2 -->
+                <div class="p-6 rounded-2xl glass flex flex-col items-center text-center group hover:border-brand-accent/30 transition-all">
+                    <div class="relative w-28 h-28 flex items-center justify-center mb-4">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="56" cy="56" r="48" stroke="#1e293b" stroke-width="6" fill="transparent"></circle>
+                            <circle cx="56" cy="56" r="48" stroke="#22C55E" stroke-width="6" fill="transparent" class="circle-progress" stroke-dasharray="301" stroke-dashoffset="30" stroke-linecap="round"></circle>
+                        </svg>
+                        <span class="absolute text-lg font-black text-white">90%</span>
+                    </div>
+                    <h3 class="heading-font text-sm font-bold text-white">Meta & Google Ads</h3>
+                    <p class="text-xs text-slate-400 mt-2">Dynamic retargeting, custom exclusions, farmer geographic segmentation.</p>
+                </div>
+
+                <!-- Circular Indicator skill block 3 -->
+                <div class="p-6 rounded-2xl glass flex flex-col items-center text-center group hover:border-brand-accent/30 transition-all">
+                    <div class="relative w-28 h-28 flex items-center justify-center mb-4">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="56" cy="56" r="48" stroke="#1e293b" stroke-width="6" fill="transparent"></circle>
+                            <circle cx="56" cy="56" r="48" stroke="#22C55E" stroke-width="6" fill="transparent" class="circle-progress" stroke-dasharray="301" stroke-dashoffset="36" stroke-linecap="round"></circle>
+                        </svg>
+                        <span class="absolute text-lg font-black text-white">88%</span>
+                    </div>
+                    <h3 class="heading-font text-sm font-bold text-white">AI & Prompt Engineering</h3>
+                    <p class="text-xs text-slate-400 mt-2">Midjourney generation, Custom GPT design, automated content scripts.</p>
+                </div>
+
+                <!-- Circular Indicator skill block 4 -->
+                <div class="p-6 rounded-2xl glass flex flex-col items-center text-center group hover:border-brand-accent/30 transition-all">
+                    <div class="relative w-28 h-28 flex items-center justify-center mb-4">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="56" cy="56" r="48" stroke="#1e293b" stroke-width="6" fill="transparent"></circle>
+                            <circle cx="56" cy="56" r="48" stroke="#22C55E" stroke-width="6" fill="transparent" class="circle-progress" stroke-dasharray="301" stroke-dashoffset="45" stroke-linecap="round"></circle>
+                        </svg>
+                        <span class="absolute text-lg font-black text-white">85%</span>
+                    </div>
+                    <h3 class="heading-font text-sm font-bold text-white">Creative Design & Editing</h3>
+                    <p class="text-xs text-slate-400 mt-2">Canva, Adobe Photoshop, Premiere Pro video styling.</p>
+                </div>
+
+            </div>
+
+            <!-- Soft Grid Tools Block -->
+            <div class="mt-12 glass rounded-2xl p-6 sm:p-8">
+                <h3 class="heading-font text-center text-white font-bold text-lg mb-8">Specialist Tool Stack</h3>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-brands fa-meta text-emerald-500 mr-2"></i> Meta Ads Manager</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-brands fa-google text-blue-500 mr-2"></i> Google Ads Center</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-solid fa-brain text-yellow-500 mr-2"></i> Prompt Systems (ChatGPT)</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-brands fa-youtube text-red-500 mr-2"></i> YouTube SEO Optimizers</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-solid fa-paintbrush text-purple-500 mr-2"></i> Adobe Photoshop</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-solid fa-clapperboard text-emerald-400 mr-2"></i> Premiere Pro & Canva</span>
+                    <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:border-brand-accent transition-colors"><i class="fa-brands fa-wordpress text-cyan-500 mr-2"></i> WordPress Page Crafting</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">03 . Offerings</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Growth Engines I Deploy</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xl mb-6 group-hover:bg-brand-accent group-hover:text-brand-dark transition-colors">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">Performance Marketing</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">End-to-end setups on Meta & Google Ads targeted highly precisely at specific geographical farming belts.</p>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-brand-accent tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Setup Campaign <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-950/40 text-brand-accentBlue flex items-center justify-center text-xl mb-6 group-hover:bg-brand-accentBlue group-hover:text-brand-dark transition-colors">
+                            <i class="fa-solid fa-crop-simple animate-pulse"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">Agritech Brand Identity</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Specialized packaging blueprints, brand positioning, and logo designs customized to win the trust of rural Indian farmers.</p>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-brand-accentBlue tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Craft Brand <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-950/40 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-purple-400 group-hover:text-brand-dark transition-colors">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">AI & Prompt Automations</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Automating agritech content drafting, custom localized voiceover prompt systems, and generative visual blueprints.</p>
+                    </div>
+                    <a href="#ai-playground" class="text-xs font-bold text-purple-400 tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Open AI Sandbox <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-950/40 text-amber-400 flex items-center justify-center text-xl mb-6 group-hover:bg-amber-400 group-hover:text-brand-dark transition-colors">
+                            <i class="fa-brands fa-youtube animate-bounce"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">YouTube SEO & Production</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Optimizing product explainer videos tailored directly to specific seed sowing guidelines, targeting high organic reach.</p>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-amber-400 tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Scale YouTube <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950/40 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:bg-emerald-400 group-hover:text-brand-dark transition-colors">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">Agri Content Strategy</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Publishing highly informative articles, localized WhatsApp copy, and field manuals that generate true trust metrics.</p>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-emerald-400 tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Build Strategy <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl glass-premium hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-950/40 text-red-400 flex items-center justify-center text-xl mb-6 group-hover:bg-red-400 group-hover:text-brand-dark transition-colors">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white mb-3">1-on-1 Consultations</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Personal brand deep dives for agritech founders, seed developers, and agricultural startup builders ready to scale.</p>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-red-400 tracking-widest uppercase mt-6 inline-flex items-center gap-1 group-hover:text-white transition-colors">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERABLE PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-24 bg-slate-950/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">04 . Case Studies</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Selected Impact Demonstrations</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12" id="portfolio-filters">
+                <button data-filter="all" class="portfolio-filter-btn px-5 py-2 text-xs font-bold tracking-wider rounded-xl transition-all uppercase bg-brand-accent text-brand-dark">All Work</button>
+                <button data-filter="agri" class="portfolio-filter-btn px-5 py-2 text-xs font-bold tracking-wider rounded-xl transition-all uppercase bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white">Agri Campaigns</button>
+                <button data-filter="branding" class="portfolio-filter-btn px-5 py-2 text-xs font-bold tracking-wider rounded-xl transition-all uppercase bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white">Branding Design</button>
+                <button data-filter="ads" class="portfolio-filter-btn px-5 py-2 text-xs font-bold tracking-wider rounded-xl transition-all uppercase bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white">Meta / Paid Ads</button>
+                <button data-filter="ai" class="portfolio-filter-btn px-5 py-2 text-xs font-bold tracking-wider rounded-xl transition-all uppercase bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white">AI Prototypes</button>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Project Item 1 (Agri Campaign) -->
+                <div class="portfolio-item hover:scale-[1.01] transition-transform duration-300" data-category="agri">
+                    <div class="glass-premium rounded-2xl overflow-hidden p-6 flex flex-col justify-between h-full relative group">
+                        <div>
+                            <!-- High-converting tag -->
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded bg-brand-accent/20 text-brand-accent text-[10px] uppercase tracking-wider font-extrabold">Agritech Launch</span>
+                                <span class="text-xs text-slate-500 font-bold"><i class="fa-solid fa-wheat-awn"></i> Cotton Seed</span>
+                            </div>
+                            <h3 class="heading-font text-lg font-bold text-white mb-2">Bapna Seeds Premium Cotton Launch</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">High-impact regional campaign introducing custom disease-resistant cotton variety across Madhya Pradesh.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Regional Targeting</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Canva Master</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Meta Ads</span>
+                            </div>
+                        </div>
+                        <button onclick="openCaseStudy('case1')" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-colors text-xs font-semibold w-full text-center">
+                            Examine Deep Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 (Branding) -->
+                <div class="portfolio-item hover:scale-[1.01] transition-transform duration-300" data-category="branding">
+                    <div class="glass-premium rounded-2xl overflow-hidden p-6 flex flex-col justify-between h-full relative group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded bg-brand-accentBlue/20 text-brand-accentBlue text-[10px] uppercase tracking-wider font-extrabold">Brand Identity</span>
+                                <span class="text-xs text-slate-500 font-bold"><i class="fa-solid fa-compass"></i> Agritech Identity</span>
+                            </div>
+                            <h3 class="heading-font text-lg font-bold text-white mb-2">Crop Defense Packaging Suite</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Rebranding container packaging systems for specialized seeds, ensuring farmer compliance & verification standards.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Photoshop suite</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Agri Graphics</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">QR Tracking</span>
+                            </div>
+                        </div>
+                        <button onclick="openCaseStudy('case2')" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-colors text-xs font-semibold w-full text-center">
+                            Examine Deep Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 (Paid Ads) -->
+                <div class="portfolio-item hover:scale-[1.01] transition-transform duration-300" data-category="ads">
+                    <div class="glass-premium rounded-2xl overflow-hidden p-6 flex flex-col justify-between h-full relative group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded bg-red-950/40 text-red-400 text-[10px] uppercase tracking-wider font-extrabold">Lead Acquisition</span>
+                                <span class="text-xs text-slate-500 font-bold"><i class="fa-solid fa-bullseye"></i> Meta Ads</span>
+                            </div>
+                            <h3 class="heading-font text-lg font-bold text-white mb-2">Farmer WhatsApp Lead funnels</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Developing frictionless Meta click-to-WhatsApp automation pipelines, producing 10,000+ local retail queries.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Meta C2W</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Geo Exclusions</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Funnels</span>
+                            </div>
+                        </div>
+                        <button onclick="openCaseStudy('case3')" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-colors text-xs font-semibold w-full text-center">
+                            Examine Deep Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Item 4 (AI prototypes) -->
+                <div class="portfolio-item hover:scale-[1.01] transition-transform duration-300" data-category="ai">
+                    <div class="glass-premium rounded-2xl overflow-hidden p-6 flex flex-col justify-between h-full relative group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded bg-purple-950/40 text-purple-400 text-[10px] uppercase tracking-wider font-extrabold">AI Engineering</span>
+                                <span class="text-xs text-slate-500 font-bold"><i class="fa-solid fa-robot"></i> Multi-lingual</span>
+                            </div>
+                            <h3 class="heading-font text-lg font-bold text-white mb-2">Agritech Auto-Prompt Copywriter</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Integrated custom-coded prompt engine outputs optimized meta scripts tailored directly to diverse Indian crops and soil types.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Prompt Systems</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Midjourney API</span>
+                                <span class="bg-slate-950 px-2 py-1 rounded text-[10px] text-slate-400">Generative Ads</span>
+                            </div>
+                        </div>
+                        <button onclick="openCaseStudy('case4')" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-colors text-xs font-semibold w-full text-center">
+                            Examine Deep Case Study
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO CASE STUDY LIGHTBOX MODALS -->
+    <div id="case-study-lightbox" class="fixed inset-0 z-[9999] bg-brand-dark/95 backdrop-blur-xl hidden flex items-center justify-center p-4">
+        <div class="relative max-w-2xl w-full glass-premium rounded-3xl p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
+            <!-- Close Modal Button -->
+            <button onclick="closeCaseStudy()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Placeholder content generated dynamically via javascript -->
+            <div id="modal-dynamic-content" class="space-y-6">
+                <!-- Data goes here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SPECIAL EXCLUSIVE COMPONENT: INTERACTIVE AI PROMPT SANDBOX -->
+    <section id="ai-playground" class="py-24 bg-gradient-to-b from-brand-dark to-slate-950 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(34,197,94,0.04),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-purple-400 uppercase tracking-[0.2em] bg-purple-950/50 border border-purple-900/60 px-4 py-1.5 rounded-full inline-block"><i class="fa-solid fa-cube animate-spin-slow"></i> 05 . Developer Toolroom</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">AI Prompt Sandbox</h2>
+                <p class="text-sm text-slate-400 mt-2">Test my agritech prompt engineering setups. Configure parameters to simulate live copywriting output.</p>
+                <div class="w-16 h-1 bg-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Interative Sandbox Form -->
+            <div class="glass rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    
+                    <!-- Configurator Panel -->
+                    <div class="md:col-span-5 space-y-6">
+                        <h3 class="heading-font text-base font-bold text-white flex items-center gap-2"><i class="fa-solid fa-sliders text-purple-400"></i> Configure Campaign</h3>
+                        
+                        <!-- Target Crop Seed Selector -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Select Target Crop</label>
+                            <select id="sandbox-crop" class="w-full bg-slate-900 border border-slate-800 focus:border-purple-500 rounded-xl px-4 py-3 text-xs text-white outline-none">
+                                <option value="cotton">Disease-Resistant Cotton Seed</option>
+                                <option value="wheat">High-Yield Durum Wheat Seed</option>
+                                <option value="pesticide">Organic Bio-stimulant Liquid</option>
+                            </select>
+                        </div>
+
+                        <!-- Communication Tone -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Target Tone of Copy</label>
+                            <select id="sandbox-tone" class="w-full bg-slate-900 border border-slate-800 focus:border-purple-500 rounded-xl px-4 py-3 text-xs text-white outline-none">
+                                <option value="farmer">Empathetic / Local Hindi Farmer Focus</option>
+                                <option value="scientific">Data-Driven Scientific / Yield focused</option>
+                                <option value="urgent">Urgent Crop-Sowing Call-to-Action</option>
+                            </select>
+                        </div>
+
+                        <button id="sandbox-run-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-600 hover:shadow-lg hover:shadow-purple-500/20 text-white font-bold text-xs tracking-wider uppercase transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-microchip"></i> Generate Prompt & Copy
+                        </button>
+                    </div>
+
+                    <!-- Output Demonstration Block -->
+                    <div class="md:col-span-7 flex flex-col justify-between bg-slate-950/80 border border-slate-800/80 rounded-2xl p-6 min-h-[300px] relative overflow-hidden">
+                        
+                        <!-- Inner Loader Overlay (shown during typing) -->
+                        <div id="sandbox-loader" class="absolute inset-0 bg-slate-950/90 flex flex-col items-center justify-center hidden z-10">
+                            <div class="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+                            <span class="text-xs text-purple-400 mt-3 font-semibold tracking-widest uppercase">Processing Engineered Prompts...</span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-slate-900 pb-3">
+                                <span class="text-[10px] uppercase font-bold text-slate-500">Structured Prompt Output</span>
+                                <span class="text-xs text-purple-400 font-mono flex items-center gap-1"><span class="w-2 h-2 bg-purple-500 rounded-full animate-ping"></span> Live Generation</span>
+                            </div>
+
+                            <!-- Engineered Prompt Frame -->
+                            <div>
+                                <span class="block text-[10px] text-slate-500 uppercase font-semibold">Engineered System Prompt:</span>
+                                <div id="prompt-output-box" class="mt-1 p-3 bg-slate-900/60 rounded-xl text-[11px] font-mono text-cyan-400 whitespace-pre-wrap leading-relaxed overflow-x-auto max-h-[100px]">
+Select values on the left to review engineered prompts.
+                                </div>
+                            </div>
+
+                            <!-- Simulated Copy Output -->
+                            <div class="pt-2">
+                                <span class="block text-[10px] text-slate-500 uppercase font-semibold">Generated Localized Ad Copy:</span>
+                                <div id="copy-output-box" class="mt-1 p-3 bg-slate-900/60 border border-slate-800 rounded-xl text-xs text-slate-200 leading-relaxed whitespace-pre-wrap max-h-[160px] overflow-y-auto">
+Copy results will load here.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Prompt stats badge -->
+                        <div class="flex items-center justify-between mt-4 border-t border-slate-900 pt-3 text-[10px] text-slate-500">
+                            <span>Targeting: Meta Ads Optimization</span>
+                            <button id="copy-sandbox-output" class="hover:text-purple-400 flex items-center gap-1 font-semibold transition-colors">
+                                <i class="fa-solid fa-copy"></i> Copy Outputs
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION DETAILED GRID -->
+    <section id="experience" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">06 . Experience Track</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Professional Roles & Academics</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Main Experience Timeline -->
+                <div class="space-y-8">
+                    <h3 class="heading-font text-xl font-bold text-white flex items-center gap-2"><i class="fa-solid fa-briefcase text-brand-accent"></i> Corporate Roles</h3>
+                    
+                    <!-- Role card 1 -->
+                    <div class="glass rounded-2xl p-6 border-l-4 border-brand-accent">
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                            <div>
+                                <h4 class="heading-font text-base font-bold text-white">Digital Marketing Manager</h4>
+                                <span class="text-xs text-brand-accent font-semibold">Bapna Seeds Pvt. Ltd.</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-950 text-brand-accent text-xs font-bold font-sans">2023 - Present</span>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 mt-4 list-disc pl-4">
+                            <li>Orchestrated entire regional digital blueprint spanning across Meta, Google Ads, and local YouTube channels.</li>
+                            <li>Generated 15,000+ localized WhatsApp leads using organic SEO guides and high-conversion retargeting.</li>
+                            <li>Cut CPA (Cost Per Acquisition) metrics by 34% applying engineered local Hindi copy and farmer avatars.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Role card 2 -->
+                    <div class="glass rounded-2xl p-6 border-l-4 border-slate-800">
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                            <div>
+                                <h4 class="heading-font text-base font-bold text-white">Freelance Marketing Partner</h4>
+                                <span class="text-xs text-slate-400 font-semibold">Self Employed</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 text-slate-400 text-xs font-bold font-sans">2020 - 2023</span>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-2 mt-4 list-disc pl-4">
+                            <li>Delivered creative packaging redesign drafts, localized marketing brochures, and agritech cataloging systems.</li>
+                            <li>Handled WordPress layouts and regional localized landing pages for agro-input suppliers.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Education & Certifications -->
+                <div class="space-y-8">
+                    <h3 class="heading-font text-xl font-bold text-white flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-brand-accentBlue"></i> Education & Certifications</h3>
+                    
+                    <div class="glass rounded-2xl p-6 border-l-4 border-brand-accentBlue">
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                            <div>
+                                <h4 class="heading-font text-base font-bold text-white">B.Sc. in Seed Technology</h4>
+                                <span class="text-xs text-brand-accentBlue font-semibold">Scientific Agri Foundation</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-cyan-950 text-brand-accentBlue text-xs font-bold font-sans">Graduated</span>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-4">
+                            Acquired fundamental biological, seed genetics, and crop lifecycle competencies. This scientific background guarantees strategic correctness during agribusiness consultations.
+                        </p>
+                    </div>
+
+                    <!-- Premium Certifications Showcase -->
+                    <div class="glass rounded-2xl p-6">
+                        <h4 class="heading-font text-sm font-bold text-white mb-4"><i class="fa-solid fa-award text-yellow-500 mr-2"></i> Verified Credentials</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3 rounded-xl bg-slate-950/60 text-center border border-slate-900">
+                                <span class="block text-xs font-bold text-white">Google Certified</span>
+                                <span class="block text-[10px] text-slate-500">Advanced Search & SEO</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 text-center border border-slate-900">
+                                <span class="block text-xs font-bold text-white">Meta Blueprint</span>
+                                <span class="block text-[10px] text-slate-500">Advanced Ads Planning</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 text-center border border-slate-900">
+                                <span class="block text-xs font-bold text-white">HubSpot Inbound</span>
+                                <span class="block text-[10px] text-slate-500">Content Copywriting</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 text-center border border-slate-900">
+                                <span class="block text-xs font-bold text-white">AI Automation</span>
+                                <span class="block text-[10px] text-slate-500">Prompt Eng. Credential</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-24 bg-slate-950/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">07 . Verification</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Praise from the Agritech Ecosystem</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Testimonial Slider Mock -->
+            <div class="max-w-4xl mx-auto relative px-4">
+                <div class="glass-premium rounded-3xl p-8 sm:p-12 relative overflow-hidden" id="testimonial-container">
+                    
+                    <div class="absolute top-6 left-6 text-slate-800 text-6xl font-serif">“</div>
+                    
+                    <div class="relative z-10 transition-all duration-300" id="testimonial-slide">
+                        <!-- Dynamic slides loaded by javascript -->
+                        <p class="text-sm sm:text-base text-slate-300 italic leading-relaxed mb-6">
+                            "Ravi completely revolutionized how we approach meta-campaign local advertising. His command over localized regional target filters and deep agricultural knowledge produced immense trust metrics with local agro-retailers."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center font-bold text-brand-accent">
+                                BS
+                            </div>
+                            <div>
+                                <h4 class="heading-font text-sm font-bold text-white">Agri-Business Stakeholder</h4>
+                                <span class="text-[10px] text-slate-500">Bapna Seeds Distribution Channel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="absolute bottom-6 right-8 flex gap-2">
+                        <button onclick="prevTestimonial()" class="w-8 h-8 rounded-full border border-slate-800 hover:border-brand-accent text-slate-400 hover:text-white flex items-center justify-center text-xs transition-colors"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="nextTestimonial()" class="w-8 h-8 rounded-full border border-slate-800 hover:border-brand-accent text-slate-400 hover:text-white flex items-center justify-center text-xs transition-colors"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">08 . Agri-Digital Insights</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-black text-white mt-4">Articles & Strategy Guides</h2>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Blog Item 1 -->
+                <article class="glass rounded-2xl overflow-hidden hover:border-brand-accent/30 transition-colors flex flex-col justify-between h-full group">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] text-brand-accent font-semibold mb-3">
+                            <span>AGRICULTURE</span> &bull; <span>JULY 2026</span>
+                        </div>
+                        <h3 class="heading-font text-base font-bold text-white group-hover:text-brand-accent transition-colors mb-3">The Meta Ads Formula for Indian Seed Companies</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-4">How to construct localized targeting rings and craft seed explainer videos to convert direct digital farmer inquiries.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500 mt-auto">
+                        <span>5 Min Read</span>
+                        <a href="javascript:void(0)" onclick="readArticle('art1')" class="hover:text-brand-accent font-bold flex items-center gap-1">Read Article <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Item 2 -->
+                <article class="glass rounded-2xl overflow-hidden hover:border-brand-accent/30 transition-colors flex flex-col justify-between h-full group">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] text-brand-accentBlue font-semibold mb-3">
+                            <span>ARTIFICIAL INTELLIGENCE</span> &bull; <span>JUNE 2026</span>
+                        </div>
+                        <h3 class="heading-font text-base font-bold text-white group-hover:text-brand-accentBlue transition-colors mb-3">Prompt Blueprints to Draft Regional Hindi Ad Copy</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-4">Deep dive into setting precise temperature constraints and context variables inside LLMs for rural target markets.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500 mt-auto">
+                        <span>8 Min Read</span>
+                        <a href="javascript:void(0)" onclick="readArticle('art2')" class="hover:text-brand-accentBlue font-bold flex items-center gap-1">Read Article <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Item 3 -->
+                <article class="glass rounded-2xl overflow-hidden hover:border-brand-accent/30 transition-colors flex flex-col justify-between h-full group">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] text-purple-400 font-semibold mb-3">
+                            <span>YOUTUBE SEO</span> &bull; <span>MAY 2026</span>
+                        </div>
+                        <h3 class="heading-font text-base font-bold text-white group-hover:text-purple-400 transition-colors mb-3">Ranking Agritech Explainer Videos on Search Engines</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-4">Step-by-step keyword planning framework to tap into sowing keyword queries that crop farmers look up on mobile devices.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500 mt-auto">
+                        <span>6 Min Read</span>
+                        <a href="javascript:void(0)" onclick="readArticle('art3')" class="hover:text-brand-accent font-bold flex items-center gap-1">Read Article <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION WITH PREMIUM GLASS FORM -->
+    <section id="contact" class="py-24 bg-slate-950/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact Core Info / Value Prop -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] bg-emerald-950/50 border border-emerald-900/60 px-4 py-1.5 rounded-full inline-block">09 . Contact Center</span>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-black text-white">Let’s Launch Your Growth Funnel</h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Ready to optimize acquisition spend, design agritech brand packaging, or train custom generative prompt systems? Get in touch for freelance strategy configurations or corporate consultation bookings.
+                    </p>
+
+                    <!-- Fast Quick Link Info Cards -->
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-brand-accent border border-slate-800"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <span class="block text-[10px] text-slate-500 uppercase font-semibold">Shoot an email</span>
+                                <a href="mailto:ravi.mukati@example.com" class="text-xs text-slate-200 font-semibold hover:text-brand-accent transition-colors">ravi.mukati.bapnaseeds@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-cyan-400 border border-slate-800"><i class="fa-solid fa-location-dot"></i></span>
+                            <div>
+                                <span class="block text-[10px] text-slate-500 uppercase font-semibold">Location / Hub</span>
+                                <span class="text-xs text-slate-200 font-semibold">Madhya Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Fast Connect Button (WhatsApp) -->
+                    <div class="pt-4">
+                        <a href="https://wa.me/911234567890" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba59] hover:shadow-lg hover:shadow-emerald-500/20 text-brand-dark font-bold text-xs uppercase tracking-wider transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Fast Connect On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Glassmorphic High-Conversion Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-premium rounded-3xl p-6 sm:p-8">
+                        <form id="portfolio-contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-[10px] uppercase text-slate-400 font-semibold tracking-wider mb-2">Your Name</label>
+                                    <input required type="text" name="name" class="w-full bg-slate-900/60 border border-slate-800/80 focus:border-brand-accent rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors" placeholder="e.g. Anand Patidar">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] uppercase text-slate-400 font-semibold tracking-wider mb-2">Corporate Email</label>
+                                    <input required type="email" name="email" class="w-full bg-slate-900/60 border border-slate-800/80 focus:border-brand-accent rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors" placeholder="e.g. anand@agrifoundation.com">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase text-slate-400 font-semibold tracking-wider mb-2">Consultation Interest</label>
+                                <select name="interest" class="w-full bg-slate-900/60 border border-slate-800/80 focus:border-brand-accent rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors">
+                                    <option value="meta-campaign">Meta Performance Ads Audits</option>
+                                    <option value="agritech-branding">Agri Brand Packaging Strategy</option>
+                                    <option value="prompt-system">Generative AI Prompt Engineering Integration</option>
+                                    <option value="freelance-collaboration">Other Digital Marketing Campaigns</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase text-slate-400 font-semibold tracking-wider mb-2">Campaign Outline / Message</label>
+                                <textarea required name="message" rows="4" class="w-full bg-slate-900/60 border border-slate-800/80 focus:border-brand-accent rounded-xl px-4 py-3 text-xs text-white outline-none transition-colors resize-none" placeholder="Please brief your distribution scale or project goals..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accentBlue text-brand-dark font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Initialize Connection Setup
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950/80 border-t border-slate-900 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-900 pb-8">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-accent to-brand-accentBlue flex items-center justify-center text-white font-bold text-sm">
+                        RM
+                    </div>
+                    <div>
+                        <span class="block heading-font text-white font-bold text-xs tracking-wide">Ravindra Mukati</span>
+                        <span class="block text-[9px] text-slate-500 tracking-wider uppercase">Marketing Manager @ Bapna Seeds</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400">
+                    <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
+                    <a href="#skills" class="hover:text-brand-accent transition-colors">Skills</a>
+                    <a href="#services" class="hover:text-brand-accent transition-colors">Services</a>
+                    <a href="#portfolio" class="hover:text-brand-accent transition-colors">Portfolio</a>
+                    <a href="#experience" class="hover:text-brand-accent transition-colors">Experience</a>
+                    <a href="#ai-playground" class="hover:text-brand-accent transition-colors">AI Sandbox</a>
+                    <a href="#blog" class="hover:text-brand-accent transition-colors">Blog</a>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 text-[11px] text-slate-500 text-center sm:text-left">
+                <span>&copy; 2026 Ravindra Mukati. All Rights Reserved. Specializing in high-performance agricultural brand growth.</span>
+                
+                <div class="flex gap-4 text-base">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" class="hover:text-brand-accent transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY BOTTOM NAVIGATION BAR FOR MOBILE TOUCH DEVICES -->
+    <div class="md:hidden fixed bottom-4 left-4 right-4 z-40 bg-brand-dark/85 backdrop-blur-lg border border-slate-800 rounded-2xl py-3 px-4 flex items-center justify-around text-slate-400">
+        <a href="#hero" class="flex flex-col items-center gap-0.5 hover:text-brand-accent transition-colors">
+            <i class="fa-solid fa-house text-sm"></i>
+            <span class="text-[9px]">Home</span>
+        </a>
+        <a href="#about" class="flex flex-col items-center gap-0.5 hover:text-brand-accent transition-colors">
+            <i class="fa-solid fa-circle-info text-sm"></i>
+            <span class="text-[9px]">About</span>
+        </a>
+        <a href="#portfolio" class="flex flex-col items-center gap-0.5 hover:text-brand-accent transition-colors">
+            <i class="fa-solid fa-briefcase text-sm"></i>
+            <span class="text-[9px]">Case Studies</span>
+        </a>
+        <a href="#ai-playground" class="flex flex-col items-center gap-0.5 hover:text-brand-accent transition-colors text-purple-400">
+            <i class="fa-solid fa-robot text-sm"></i>
+            <span class="text-[9px]">Sandbox</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center gap-0.5 hover:text-brand-accent transition-colors">
+            <i class="fa-solid fa-phone text-sm"></i>
+            <span class="text-[9px]">Contact</span>
+        </a>
+    </div>
+
+    <script>
+        // Pre-Loader simulation
+        window.addEventListener('load', () => {
+            const progressBar = document.getElementById('loader-progress-bar');
+            const loaderText = document.getElementById('loader-text');
+            const loaderScreen = document.getElementById('loader-screen');
+
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 20;
+                if (progressBar) progressBar.style.width = progress + '%';
+                
+                if (progress === 40 && loaderText) loaderText.textContent = "Synthesizing agricultural prompt templates...";
+                if (progress === 80 && loaderText) loaderText.textContent = "Loading performance graphs...";
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        if (loaderScreen) {
+                            loaderScreen.style.opacity = '0';
+                            loaderScreen.style.visibility = 'hidden';
+                        }
+                        // Initialize Animated Counters once screen loader exits
+                        initStatsCounters();
+                    }, 400);
+                }
+            }, 150);
+        });
+
+        // Desktop Premium Custom Cursor Follower Logic
+        const cursor = document.getElementById('custom-cursor');
+        const cursorGlow = document.getElementById('custom-cursor-glow');
+
+        document.addEventListener('mousemove', (e) => {
+            if (cursor && cursorGlow) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                cursorGlow.style.left = e.clientX + 'px';
+                cursorGlow.style.top = e.clientY + 'px';
+            }
+        });
+
+        // Enhance interactions over button links
+        const targetHoverables = document.querySelectorAll('a, button, select, input, textarea');
+        targetHoverables.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                if (cursor) {
+                    cursor.style.width = '24px';
+                    cursor.style.height = '24px';
+                    cursor.style.backgroundColor = '#06B6D4';
+                }
+            });
+            item.addEventListener('mouseleave', () => {
+                if (cursor) {
+                    cursor.style.width = '8px';
+                    cursor.style.height = '8px';
+                    cursor.style.backgroundColor = '#22C55E';
+                }
+            });
+        });
+
+        // Sticky Nav styling upon scroll
+        const headerEl = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (headerEl) {
+                if (window.scrollY > 50) {
+                    headerEl.classList.add('bg-brand-dark/90', 'backdrop-blur-lg', 'shadow-lg');
+                } else {
+                    headerEl.classList.remove('bg-brand-dark/90', 'backdrop-blur-lg', 'shadow-lg');
+                }
+            }
+        });
+
+        // Mobile Nav Drawer toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-close-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (menuBtn && closeBtn && mobileDrawer) {
+            menuBtn.addEventListener('click', () => {
+                mobileDrawer.classList.remove('hidden');
+            });
+            closeBtn.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+            });
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileDrawer.classList.add('hidden');
+                });
+            });
+        }
+
+        // Stats Animated Counter function
+        function initStatsCounters() {
+            const animateVal = (id, start, end, duration, prefix = '', suffix = '') => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                let startTime = null;
+                const step = (timestamp) => {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / duration, 1);
+                    const currentVal = Math.floor(progress * (end - start) + start);
+                    el.textContent = prefix + currentVal.toLocaleString() + suffix;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            };
+
+            animateVal('stat-years', 0, 5, 2000, '', '+');
+            animateVal('stat-campaigns', 0, 120, 2000, '', '+');
+            animateVal('stat-roas', 0, 4, 2000, '', '.8x');
+            animateVal('stat-leads', 0, 15000, 2000, '', '+');
+        }
+
+        // Filterable Portfolio masonry logic
+        const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove Active from all
+                filterBtns.forEach(b => b.classList.remove('bg-brand-accent', 'text-brand-dark'));
+                filterBtns.forEach(b => b.classList.add('bg-slate-900/80', 'text-slate-400'));
+
+                // Add active state to clicked
+                btn.classList.add('bg-brand-accent', 'text-brand-dark');
+                btn.classList.remove('bg-slate-900/80', 'text-slate-400');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Case Studies Detail Repository
+        const caseStudies = {
+            case1: {
+                title: "Bapna Premium Cotton Variety Launch",
+                cat: "Agritech Launch",
+                challenge: "Educate rural cotton farmers about a new high-yield, disease-resistant seed variety across targeted dry regions of Madhya Pradesh, overcoming low digital trust.",
+                solution: "Engineered ultra-targeted Meta dynamic geographic rings around core seed distributor hubs. Produced simplified visual infographics with WhatsApp conversion channels and direct agricultural query lines.",
+                results: "18% click-to-WhatsApp conversion rate. Generated ₹14L+ in direct dealer bookings inside the first 4 weeks.",
+                tools: "Meta Ads, Canva production suite, Geo exclusion strategy, WhatsApp Automation."
+            },
+            case2: {
+                title: "Crop Defense Packaging Suite Overhaul",
+                cat: "Brand Identity Design",
+                challenge: "Old packaging suffered replication/counterfeiting issues. Low packaging shelf-appeal at local agricultural retail centers.",
+                solution: "Constructed premium, modern holographic graphic blueprints using high-contrast colors and a centralized anti-counterfeit QR code matrix connecting farmers straight to verification guidelines.",
+                results: "Completely eliminated counterfeit seed distribution claims within pilot distribution regions. Improved retail shelve preference visual queries by 45%.",
+                tools: "Adobe Photoshop, vector illustration, security graphic coding."
+            },
+            case3: {
+                title: "Farmer WhatsApp Lead Automation Funnel",
+                cat: "Lead Acquisition Campaign",
+                challenge: "Standard lead capture forms suffered low conversion rates due to complex form layouts and language friction among Indian farmers.",
+                solution: "Replaced formal registration setups with a direct 'One-Click to WhatsApp' meta dynamic ad pipeline with localized automated chatbot guidelines programmed in regional Hindi.",
+                results: "Reduced average lead acquisition costs by 34%. Acquired 10,000+ localized active farmer contact leads for seed distribution.",
+                tools: "Meta Conversions API, Automated messaging setups, Localized copy systems."
+            },
+            case4: {
+                title: "Agritech AI Copywriter Engine",
+                cat: "AI Prompt Engineering",
+                challenge: "Agribusiness operations scale slowly because creating custom, high-converting ad copies matching local crop cycles across different Indian states is highly manual and slow.",
+                solution: "Coded custom system prompt architectures loaded with crop genetics, sowing timelines, and geographical variables to output production-ready localized marketing copies instantly.",
+                results: "Decreased manual design copywriting overhead by 90% and allowed real-time ad launch adaptations.",
+                tools: "Custom LLM engineering, JSON parameter inputs, localized copywriting templates."
+            }
+        };
+
+        const modal = document.getElementById('case-study-lightbox');
+        const modalContent = document.getElementById('modal-dynamic-content');
+
+        window.openCaseStudy = function(id) {
+            const data = caseStudies[id];
+            if (!data) return;
+
+            modalContent.innerHTML = `
+                <div class="border-b border-slate-800 pb-4">
+                    <span class="text-xs uppercase font-bold text-brand-accent tracking-wider">${data.cat}</span>
+                    <h3 class="heading-font text-2xl font-black text-white mt-2">${data.title}</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <span class="block text-xs uppercase font-extrabold text-slate-500">The Core Challenge:</span>
+                        <p class="text-xs text-slate-300 leading-relaxed mt-1">${data.challenge}</p>
+                    </div>
+
+                    <div>
+                        <span class="block text-xs uppercase font-extrabold text-brand-accentBlue">The Implemented Solution:</span>
+                        <p class="text-xs text-slate-300 leading-relaxed mt-1">${data.solution}</p>
+                    </div>
+
+                    <div>
+                        <span class="block text-xs uppercase font-extrabold text-brand-accent">Measurable ROI Results:</span>
+                        <p class="text-xs text-emerald-400 font-semibold leading-relaxed mt-1">${data.results}</p>
+                    </div>
+
+                    <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-900 mt-4">
+                        <span class="block text-[10px] uppercase font-extrabold text-slate-500">Tools & Methodologies Used:</span>
+                        <p class="text-xs text-slate-400 mt-1">${data.tools}</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex justify-end">
+                    <button onclick="closeCaseStudy()" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-all text-xs font-bold">
+                        Acknowledge & Close
+                    </button>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Lock scrolling
+        };
+
+        window.closeCaseStudy = function() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Re-enable scroll
+        };
+
+        // Click outside modal closing
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeCaseStudy();
+                }
+            });
+        }
+
+        // Testimonial Repository Carousel simulation
+        const testimonials = [
+            {
+                text: "Ravi completely revolutionized how we approach meta-campaign local advertising. His command over localized regional target filters and deep agricultural knowledge produced immense trust metrics with local agro-retailers.",
+                name: "Anand Patidar",
+                role: "Agribusiness Channel Distributor, MP"
+            },
+            {
+                text: "The integration of AI prompt strategies for local marketing script variations saved our internal design division endless copy overhead, letting us test dozens of creative ideas in half the time.",
+                name: "S. K. Bapna",
+                role: "Director, Bapna Seeds Pvt. Ltd."
+            },
+            {
+                text: "Ravindra's seed technology education combined with digital expertise represents the future of Indian Agritech. Highly responsive layouts and clear, high-ROI conversions speak volumes.",
+                name: "Dr. R. Mukati",
+                role: "Agritech Consultant & Crop Scientist"
+            }
+        ];
+
+        let currentTestimonialIndex = 0;
+        const testSlide = document.getElementById('testimonial-slide');
+
+        function renderTestimonial() {
+            if (!testSlide) return;
+            const item = testimonials[currentTestimonialIndex];
+            
+            testSlide.style.opacity = '0';
+            setTimeout(() => {
+                testSlide.innerHTML = `
+                    <p class="text-sm sm:text-base text-slate-300 italic leading-relaxed mb-6">
+                        "${item.text}"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-accent/20 flex items-center justify-center font-bold text-brand-accent text-sm">
+                            ${item.name.substring(0, 2).toUpperCase()}
+                        </div>
+                        <div>
+                            <h4 class="heading-font text-sm font-bold text-white">${item.name}</h4>
+                            <span class="text-[10px] text-slate-500">${item.role}</span>
+                        </div>
+                    </div>
+                `;
+                testSlide.style.opacity = '1';
+            }, 300);
+        }
+
+        window.nextTestimonial = function() {
+            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+            renderTestimonial();
+        }
+
+        window.prevTestimonial = function() {
+            currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+            renderTestimonial();
+        }
+
+        // AI Prompt Sandbox interactive generator logic
+        const runBtn = document.getElementById('sandbox-run-btn');
+        const sandboxLoader = document.getElementById('sandbox-loader');
+        const promptBox = document.getElementById('prompt-output-box');
+        const copyBox = document.getElementById('copy-output-box');
+        const copyBtn = document.getElementById('copy-sandbox-output');
+
+        const promptTemplates = {
+            cotton: {
+                farmer: {
+                    prompt: "SYSTEM PROMPT: You are an agricultural marketing copywriting expert specializing in rural central Indian markets. Write highly engaging, conversion-optimized ad copy in Hindi (written in Devnagari or Hinglish) for premium cotton seeds from Bapna Seeds. Address farmer concerns of leaf-curl virus, bollworm resistance, and high-yield returns. Focus on trust, heritage, and prosperity.",
+                    copy: "🌾 इस बार कपास में होगा सिर्फ डबल मुनाफा! 🌾\n\nकिसान भाइयों, क्या आप पत्ती लपेट बीमारी (Leaf Curl Virus) से परेशान हैं? \nबापना सीड्स लाया है नए हाइब्रिड कपास के बीज!\n\n✔️ कीट-प्रतिरोधक क्षमता जो कीटों का मुकाबला करे।\n✔️ प्रत्येक शाखा में भारी मात्रा में बड़े और चमकदार बोंड।\n✔️ अधिक उपज जो आपके बैंक बैलेंस को बढ़ाए।\n\n📞 हमारे अधिकृत डीलर से जुड़ने के लिए नीचे दिए बटन पर तुरंत क्लिक करें!"
+                },
+                scientific: {
+                    prompt: "SYSTEM PROMPT: Act as an agronomist marketer. Draft a tech-heavy, data-backed conversion script for premium disease-resistant cotton seeds targeted at modern agribusinesses and dealers. Highlight fiber quality (staple length 32mm+) and specific genomic resilience metrics.",
+                    copy: "TECHNICAL SPECIFICATION PREVIEW:\nVariety ID: Bapna Hybrid-99 Cotton Seed\nResilience Profile: Transgenic Bt protection against Heliothis pest complexes.\nStaple Parameters: Length 31.8mm to 33.2mm, strength rating 28.4 g/tex.\n\nMaximizing Agricultural Yield requires precision. Test trials confirm a 24% reduction in agro-chemical inputs over standard seed alternatives. Schedule dealer supply consultations now."
+                },
+                urgent: {
+                    prompt: "SYSTEM PROMPT: Act as an urgent campaign closer. Build high FOMO (Fear of Missing Out) meta-ads copy warning local farmers that sowing seasons are closing in 5 days, highlighting immediate seed stock limits at distribution hubs.",
+                    copy: "🚨 चेतावनी: कपास की बुवाई का समय समाप्त होने में केवल 5 दिन शेष! 🚨\n\nकपास का प्रीमियम हाइब्रिड स्टॉक बहुत सीमित मात्रा में बचा है। बापना सीड्स का सबसे भरोसेमंद स्टॉक फिर नहीं मिलेगा!\n\n👉 अपनी बुवाई निश्चित करें और तुरंत निकटतम बापना सीड्स केंद्र पर जाएँ। कल की देरी भारी पड़ सकती है!"
+                }
+            },
+            wheat: {
+                farmer: {
+                    prompt: "SYSTEM PROMPT: Act as a rustic rural strategist. Output a comforting wheat seed advertisement centered around golden grain crop returns, low water requirements, and the perfect family legacy of rich chapati quality.",
+                    copy: "🌾 बापना लोकवन स्पेशल गेहूं: हर दाना जैसे असली सोना! 🌾\n\nकिसान भाइयों, कम पानी में बंपर पैदावार पाने का सुनहरा अवसर!\nहमारा लोकवन गेहूं देता है शानदार चमकदार दाने और चमकदार रोटियां।\n\nकम लागत, शानदार मुनाफा। बापना सीड्स पर किसान का अटूट विश्वास।\n📞 अभी ऑर्डर करने के लिए कॉल करें!"
+                },
+                scientific: {
+                    prompt: "SYSTEM PROMPT: Scientific marketing strategy template. Highlight Durum wheat starch levels, gluten content, disease index (rust resistance metrics), and targeted irrigation schedule parameters.",
+                    copy: "TECHNICAL BREADTH ANALYSIS:\nGenotype: Durum Wheat (Bapna-77)\nMoisture Demand Index: -15% optimal irrigation demand.\nDisease Rating: Resistant to Leaf Rust (Puccinia recondita) and Loose Smut.\nGluten Strength: Ideal index for premium industrial grain output.\n\nDeploy conversion metrics to tap international crop quality grades. Connect with Bapna Export Management Team."
+                },
+                urgent: {
+                    prompt: "SYSTEM PROMPT: Create high-urgency winter rabi crop ads highlighting cold sowing schedule deadlines and immediate distribution hub stock clearance.",
+                    copy: "❄️ रबी सीजन की तैयारी में न करें देरी! 🚨\n\nबापना उन्नत लोकवन गेहूं के बीजों का स्टॉक डीलर्स के पास तेजी से समाप्त हो रहा है। सीजन का अंतिम शिपमेंट अब उपलब्ध है।\n\n👉 अभी अपनी बुकिंग पक्की करें अन्यथा सीजन शुरू होने पर पुराने दाम नहीं मिलेंगे!"
+                }
+            },
+            pesticide: {
+                farmer: {
+                    prompt: "SYSTEM PROMPT: Act as a soil conservation advocate. Draft persuasive copy for an organic crop-booster liquid, showing how chemical sprays deplete soil earthworms and organic matter.",
+                    copy: "🌱 ज़मीन बचेगी, तभी तो फसल हँसेगी! 🌱\n\nअंधाधुंध केमिकल स्प्रे से अपनी मिट्टी को बंजर न होने दें। बापना ऑर्गेनिक बायो-लिक्विड है आपकी मिट्टी का सच्चा रक्षक।\n\n✔️ फसलों को मिले प्राकृतिक पोषक तत्व।\n✔️ जड़ों का बेहतर विकास और पौधों की हरी-भरी पत्तियां।\n\n📞 संपर्क कर अपना पहला ऑर्गेनिक किट बुक करें!"
+                },
+                scientific: {
+                    prompt: "SYSTEM PROMPT: Formulate crop nutrition data-backed meta-ads copy outlining biochemical compounds, microbial action pathways, and direct micronutrient chelation indices.",
+                    copy: "PRODUCT SPECIFICATION BLUEPRINT:\nComposition: Seaweed Extract + Chelated Amino Acids (12% Nitrogen, 8% Potassium).\nMicrobial Vector: Enhances mycorrhiza colonization inside the plant root zone.\n\nAccelerate photosynthetic absorption by 18.5%. View test trial data sheets or call for bulk commercial order slots."
+                },
+                urgent: {
+                    prompt: "SYSTEM PROMPT: High urgency organic liquid spray ad layout designed to rescue crops experiencing mid-season stress or leaf yellowing symptoms.",
+                    copy: "🚨 क्या आपकी सोयाबीन या कपास की पत्तियां पीली पड़ रही हैं? 🚨\n\nफसल को तत्काल जीवनदान दें! बापना बायो-लिक्विड का छिड़काव अगले 48 घंटों में करें। \nदेरी होने पर फसल की रिकवरी मुश्किल हो सकती है।\n\n👉 तुरंत नजदीकी डीलर से प्राप्त करें या सीधे आर्डर करें!"
+                }
+            }
+        };
+
+        if (runBtn) {
+            runBtn.addEventListener('click', () => {
+                const crop = document.getElementById('sandbox-crop').value;
+                const tone = document.getElementById('sandbox-tone').value;
+
+                if (sandboxLoader) sandboxLoader.classList.remove('hidden');
+
+                setTimeout(() => {
+                    if (sandboxLoader) sandboxLoader.classList.add('hidden');
+                    
+                    const data = promptTemplates[crop][tone];
+                    if (promptBox && copyBox) {
+                        promptBox.textContent = data.prompt;
+                        copyBox.textContent = data.copy;
+                    }
+                }, 1000);
+            });
+        }
+
+        // Copy outputs button
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                const contentToCopy = `PROMPT:\n${promptBox.textContent}\n\nCOPY:\n${copyBox.textContent}`;
+                navigator.clipboard.writeText(contentToCopy).then(() => {
+                    const originalText = copyBtn.innerHTML;
+                    copyBtn.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> Copied!`;
+                    setTimeout(() => {
+                        copyBtn.innerHTML = originalText;
+                    }, 2000);
+                });
+            });
+        }
+
+        // Blog Article Viewer Logic
+        const articleDatabase = {
+            art1: {
+                title: "The Meta Ads Formula for Indian Seed Companies",
+                content: "In the evolving agritech landscape, direct-to-farmer advertising requires a shift from standard retail setups. When running campaigns for premium cotton seeds or crop protection, we must address the ultimate visual cue: showing actual farmers holding heavy crops in the field. Geographic rings must exclude metropolitan areas and target precise rural districts. By replacing lead generation forms with direct 'Click to WhatsApp' channels and configuring automated conversational bots in regional languages, we can build a strong relationship with local growers and dealers alike."
+            },
+            art2: {
+                title: "Prompt Blueprints to Draft Regional Hindi Ad Copy",
+                content: "Generative AI can act as a powerful force multiplier for localized agritech operations when designed correctly. In this guide, we examine system prompt configurations. When prompting LLMs for rural copy, we set the temperature parameter to 0.7 to balance stability and creative appeal. It is vital to feed the model specific geographical variables, regional crop timelines, and target farmer profiles. This outputs copy that addresses local pain points (like pest resistance or monsoon delays) with precise vernacular terms instead of generic translations."
+            },
+            art3: {
+                title: "Ranking Agritech Explainer Videos on Search Engines",
+                content: "YouTube functions as the primary educational channel for the modern Indian farmer. When researching crop safety or hybrid sowing guidelines, millions of organic farmers search YouTube for guidance. Ranking at the top of these search queries requires a structured SEO framework. Optimize metadata and subtitles with local sowing keywords. Structure titles to address practical issues directly (e.g. 'How to save wheat crops from leaf rust'). Linking these explainer videos to dynamic WhatsApp CTA channels drives immense, high-quality organic conversions."
+            }
+        };
+
+        window.readArticle = function(id) {
+            const article = articleDatabase[id];
+            if (!article) return;
+
+            modalContent.innerHTML = `
+                <div class="border-b border-slate-800 pb-4">
+                    <span class="text-xs uppercase font-bold text-brand-accent tracking-wider">Agri-Digital Insights</span>
+                    <h3 class="heading-font text-2xl font-black text-white mt-2">${article.title}</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <p class="text-sm text-slate-300 leading-relaxed font-sans">${article.content}</p>
+                </div>
+
+                <div class="pt-4 flex justify-end">
+                    <button onclick="closeCaseStudy()" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-brand-accent text-slate-300 hover:text-brand-dark transition-all text-xs font-bold">
+                        Acknowledge & Close
+                    </button>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Form Submission validation simulation
+        const contactForm = document.getElementById('portfolio-contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Show successful setup trigger modal
+                modalContent.innerHTML = `
+                    <div class="text-center py-6 space-y-4">
+                        <div class="w-16 h-16 bg-brand-accent/20 text-brand-accent rounded-full flex items-center justify-center text-3xl mx-auto">
+                            <i class="fa-solid fa-paper-plane animate-bounce"></i>
+                        </div>
+                        <h3 class="heading-font text-2xl font-black text-white">Connection Pipeline Initialized!</h3>
+                        <p class="text-xs text-slate-400 max-w-sm mx-auto leading-relaxed">
+                            Thank you for reaching out. Ravindra Mukati will verify your distribution scale or agribusiness campaign requirements and get in touch with you shortly.
+                        </p>
+                        <button onclick="closeCaseStudy()" class="px-6 py-2.5 rounded-xl bg-brand-accent text-brand-dark text-xs font-bold transition-all hover:scale-105">
+                            Return to Portfolio
+                        </button>
+                    </div>
+                `;
+                
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
